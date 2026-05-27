@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background: linear-gradient(-150deg,rgb(39, 118, 93),rgb(43, 23, 27));
+    background-repeat: no-repeat;
+}
+h1{
+    /* background-color: black; */
+    height:20vmin;
+    color:white;
+    font-size: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr 1f;
+}
+.div_1{
+    /* height: 100%; */
+    aspect-ratio: 16/9; /* The Trick: Use aspect-ratio to match your image dimensions */
+    width: 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: cover;
+    position: relative;
+    background-size:100% 100%; /* Forces the image to stretch to the exact edges */
+    background-image: url("Images/Image_1.png");
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
