@@ -18,9 +18,9 @@ h1 {
   height: 20vmin;
   color: white;
   font-size: 8vmin;
-   display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 main {
   padding-top: 20vmin;
@@ -30,7 +30,7 @@ main {
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%; /* Forces the image to stretch to the exact edges */
-  background-image: url("Images/Image_1.png");
+  background-image: url("Images/Img_compressed.webp");
   overflow: hidden;
 }
 .message {
@@ -50,13 +50,26 @@ main {
   font-weight: bold;
   font-size: 20vmin;
 }
-.div_2{
+button {
+  padding: 1vmin;
+  font-weight: bold;
+  font-size:2vmin;
+  margin-left: 8vmin;
+  margin-top: 4vmin;
+  border: none;
+  color: white;
+  background-color: rgb(13, 29, 13);
+  border-radius:10px;
+  height: 20px;
+  width:60px ;
+}
+.div_2 {
   height: 180px;
 }
 .about h2 {
   background-color: white;
   height: 5vmax;
-   width: 35%;
+  width: 35%;
   margin: 4vmin auto;
   display: flex;
   justify-content: center;
@@ -68,7 +81,7 @@ main {
 .about_paragraph {
   color: white;
   font-size: 2vmax;
-  padding:0px 2vmax;
+  padding: 0px 2vmax;
 }
 footer {
   background-color: rgb(72, 70, 70);
@@ -77,40 +90,48 @@ footer {
 footer p {
   padding: 3vmin;
 }
-
+@media (min-width:400px){
+  button {
+  padding: 2vmin;
+  /* font-size:2vmax; */
+  border-radius:10px;
+  height: 25px;
+  width:70px ;
+}
+}
 @media (min-width: 670px) {
   .message {
     font-size: 10vmax;
     margin-top: 3.5vmax;
   }
-  h1{
-  font-size: 8.5vmin;
-  height: 21vmin;
+  h1 {
+    font-size: 8.5vmin;
+    height: 21vmin;
   }
 }
-@media (min-width:800px){
-   .message {
+@media (min-width: 800px) {
+  .message {
     margin-top: 4vmax;
   }
-  h1{
-  font-size: 9vmin;
-  height: 22vmin;
+  h1 {
+    font-size: 9vmin;
+    height: 22vmin;
   }
-  .div_2{
-  height: 220px;
-  padding: 3vmin 0px;
+  .div_2 {
+    height: 220px;
+    padding: 3vmin 0px;
+  }
 }
-}
-@media (min-width:1000px){
-   .message {
+@media (min-width: 1000px) {
+  .message {
     margin-top: 6vmax;
   }
-  h1{
-  font-size: 9.5vmin;
-  height: 23vmin;
+  h1 {
+    font-size: 9.5vmin;
+    height: 23vmin;
   }
-   .div_2{
-  height: 280px;
-  padding: 3vmin 0px;
-}
+  .div_2 {
+    height: 280px;
+    padding: 3vmin 0px;
+  }
 }
