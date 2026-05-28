@@ -38,8 +38,10 @@ main {
   font-size: 10vmin;
   margin-left: 6vmin;
   margin-top: 3vmin;
+  line-height:0.6; /*removing space between tranforming future*/
   color: rgb(11, 47, 11);
 }
+
 .heading {
   height: 10vh;
   width: 80%;
@@ -50,32 +52,19 @@ main {
   font-weight: bold;
   font-size: 20vmin;
 }
-button {
-  padding: 1vmin;
-  font-weight: bold;
-  font-size:2vmin;
-  margin-left: 8vmin;
-  margin-top: 4vmin;
-  border: none;
-  color: white;
-  background-color: rgb(13, 29, 13);
-  border-radius:10px;
-  height: 20px;
-  width:60px ;
-}
 .div_2 {
-  height: 180px;
+  height:230px;
 }
 .about h2 {
   background-color: white;
-  height: 5vmax;
-  width: 35%;
+  height: 35px;
+  width: 130px;
   margin: 4vmin auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
-  border-radius: 3vmin;
+  border-radius: 10px;
   font-size: 3vmax;
 }
 .about_paragraph {
@@ -83,23 +72,72 @@ button {
   font-size: 2vmax;
   padding: 0px 2vmax;
 }
+.button_container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_container a{
+  text-decoration: none;
+  color:black;
+}
+button {
+  margin: 30px;
+  height: 20px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  border: none;
+  background:white;
+  border-radius: 10px;
+}
+button a:hover{
+  color: black;
+  font-weight: bold;
+}
+button:hover{
+  color: black;
+   background: linear-gradient(-150deg, rgb(10, 43, 34), rgb(139, 11, 43));
+}
 footer {
-  background-color: rgb(72, 70, 70);
+  height: 87px;
+  background-color:rgb(28, 26, 26);
   color: white;
+  display: flex;
 }
 footer p {
   padding: 3vmin;
 }
 @media (min-width:400px){
+  .about h2{
+   height: 40px;
+  width: 150px;
+  font-size: 3.1vmax;
+  }
   button {
-  padding: 2vmin;
-  /* font-size:2vmax; */
-  border-radius:10px;
+    margin-top:50px;
   height: 25px;
-  width:70px ;
-}
+  width: 170px;
+  font-size: 1.6vmax;
+  }
+
+  .div_2 {
+    padding: 3vmin 0px;
+  }
 }
 @media (min-width: 670px) {
+  .about h2{
+   height: 45px;
+  width: 180px;
+  font-size: 3.2vmax;
+  }
+  button {
+    margin-top:70px;
+  height: 28px;
+  width: 200px;
+  font-size: 1.7vmax;
+  }
   .message {
     font-size: 10vmax;
     margin-top: 3.5vmax;
@@ -110,6 +148,17 @@ footer p {
   }
 }
 @media (min-width: 800px) {
+  .about h2{
+   height: 55px;
+  width: 240px;
+  font-size: 3.3vmax;
+  }
+  button {
+     margin-top:80px;
+  height: 30px;
+  width: 240px;
+  font-size: 1.8vmax;
+  }
   .message {
     margin-top: 4vmax;
   }
@@ -118,11 +167,22 @@ footer p {
     height: 22vmin;
   }
   .div_2 {
-    height: 220px;
+  height:300px;
     padding: 3vmin 0px;
   }
 }
 @media (min-width: 1000px) {
+  .about h2{
+   height: 65px;
+  width: 300px;
+  font-size: 3.4vmax;
+  }
+ button {
+  margin-top:100px;
+  height: 35px;
+  width: 350px;
+  font-size: 1.9vmax;
+  }
   .message {
     margin-top: 6vmax;
   }
@@ -131,7 +191,7 @@ footer p {
     height: 23vmin;
   }
   .div_2 {
-    height: 280px;
+  height:350px;
     padding: 3vmin 0px;
   }
 }
