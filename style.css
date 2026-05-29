@@ -38,7 +38,7 @@ main {
   font-size: 10vmin;
   margin-left: 6vmin;
   margin-top: 3vmin;
-  line-height:0.6; /*removing space between tranforming future*/
+  line-height: 0.6; /*removing space between tranforming future*/
   color: rgb(11, 47, 11);
 }
 
@@ -53,7 +53,7 @@ main {
   font-size: 20vmin;
 }
 .div_2 {
-  height:230px;
+  height: 270px;
 }
 .about h2 {
   background-color: white;
@@ -70,7 +70,7 @@ main {
 .about_paragraph {
   color: white;
   font-size: 2vmax;
-  padding: 0px 2vmax;
+  padding: 0px 4vmin;
 }
 .button_container {
   height: 50px;
@@ -78,9 +78,9 @@ main {
   justify-content: center;
   align-items: center;
 }
-.button_container a{
+.button_container a {
   text-decoration: none;
-  color:black;
+  color: white;
 }
 button {
   margin: 30px;
@@ -89,54 +89,57 @@ button {
   font-weight: bold;
   font-size: 1.5vmax;
   border: none;
-  background:white;
   border-radius: 10px;
+box-shadow: 1px 1px 2px 2px rgb(17, 7, 21);
+  background: linear-gradient(-150deg, rgb(122, 45, 104), #3e448a);
 }
-button a:hover{
-  color: black;
+button a:hover {
+  color: white;
   font-weight: bold;
 }
-button:hover{
-  color: black;
-   background: linear-gradient(-150deg, rgb(10, 43, 34), rgb(139, 11, 43));
+button:hover {
+  color: white;
+  background: linear-gradient(-150deg, rgb(193, 114, 114), #20223d);
 }
 footer {
-  height: 87px;
-  background-color:rgb(28, 26, 26);
+  height: 136px;
+  font-weight: bold;
+  font-size: 2.5vmin;
+  background-color: rgb(8, 4, 4);
   color: white;
-  display: flex;
 }
 footer p {
   padding: 3vmin;
 }
-@media (min-width:400px){
-  .about h2{
-   height: 40px;
-  width: 150px;
-  font-size: 3.1vmax;
+@media (min-width: 400px) {
+  .about h2 {
+    height: 40px;
+    width: 150px;
+    font-size: 3.1vmax;
   }
   button {
-    margin-top:50px;
-  height: 25px;
-  width: 170px;
-  font-size: 1.6vmax;
+    margin-top: 50px;
+    height: 25px;
+    width: 170px;
+    font-size: 1.6vmax;
   }
 
   .div_2 {
+    height: 300px;
     padding: 3vmin 0px;
   }
 }
 @media (min-width: 670px) {
-  .about h2{
-   height: 45px;
-  width: 180px;
-  font-size: 3.2vmax;
+  .about h2 {
+    height: 45px;
+    width: 180px;
+    font-size: 3.2vmax;
   }
   button {
-    margin-top:70px;
-  height: 28px;
-  width: 200px;
-  font-size: 1.7vmax;
+    margin-top: 70px;
+    height: 28px;
+    width: 200px;
+    font-size: 1.7vmax;
   }
   .message {
     font-size: 10vmax;
@@ -148,16 +151,16 @@ footer p {
   }
 }
 @media (min-width: 800px) {
-  .about h2{
-   height: 55px;
-  width: 240px;
-  font-size: 3.3vmax;
+  .about h2 {
+    height: 55px;
+    width: 240px;
+    font-size: 3.3vmax;
   }
   button {
-     margin-top:80px;
-  height: 30px;
-  width: 240px;
-  font-size: 1.8vmax;
+    margin-top: 80px;
+    height: 30px;
+    width: 240px;
+    font-size: 1.8vmax;
   }
   .message {
     margin-top: 4vmax;
@@ -167,21 +170,21 @@ footer p {
     height: 22vmin;
   }
   .div_2 {
-  height:300px;
+    height: 380px;
     padding: 3vmin 0px;
   }
 }
 @media (min-width: 1000px) {
-  .about h2{
-   height: 65px;
-  width: 300px;
-  font-size: 3.4vmax;
+  .about h2 {
+    height: 65px;
+    width: 300px;
+    font-size: 3.4vmax;
   }
- button {
-  margin-top:100px;
-  height: 35px;
-  width: 350px;
-  font-size: 1.9vmax;
+  button {
+    margin-top: 100px;
+    height: 45px;
+    width: 380px;
+    font-size: 1.9vmax;
   }
   .message {
     margin-top: 6vmax;
@@ -191,7 +194,7 @@ footer p {
     height: 23vmin;
   }
   .div_2 {
-  height:350px;
+    height: 400px;
     padding: 3vmin 0px;
   }
 }
