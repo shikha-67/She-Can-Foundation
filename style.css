@@ -57,6 +57,7 @@ main {
 }
 .about h2 {
   background-color: white;
+  box-shadow: 1px 1px 20px 2px rgb(44, 21, 53);
   height: 35px;
   width: 130px;
   margin: 4vmin auto;
@@ -78,11 +79,12 @@ main {
   justify-content: center;
   align-items: center;
 }
-.button_container a {
+.button_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: white;
-}
-button {
   margin: 30px;
   height: 20px;
   width: 150px;
@@ -90,16 +92,17 @@ button {
   font-size: 1.5vmax;
   border: none;
   border-radius: 10px;
-box-shadow: 1px 1px 2px 2px rgb(17, 7, 21);
+  box-shadow: 1px 1px 20px 2px rgb(17, 7, 21);
   background: linear-gradient(-150deg, rgb(122, 45, 104), #3e448a);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
-button a:hover {
-  color: white;
-  font-weight: bold;
-}
-button:hover {
-  color: white;
+.button_link:hover {
+  transform: scale(1.05);
   background: linear-gradient(-150deg, rgb(193, 114, 114), #20223d);
+}
+.button_link:active {
+  transform: scale(0.98);
 }
 footer {
   height: 136px;
@@ -112,21 +115,21 @@ footer p {
   padding-top: 3vmin;
   padding-left: 3.5vmin;
 }
-.icon{
+.icon {
   height: 15px;
   width: 15px;
   padding-left: 0.2vmin;
 }
-.contact_container{
+.contact_container {
   padding-top: 2vmin;
   padding-left: 4vmin;
 }
 
-.detail{
+.detail {
   display: grid;
   grid-template-columns: 10px 1fr;
 }
-.detail_content{
+.detail_content {
   padding-top: -3vh;
 }
 @media (min-width: 400px) {
@@ -135,7 +138,7 @@ footer p {
     width: 150px;
     font-size: 3.1vmax;
   }
-  button {
+  .button_link {
     margin-top: 50px;
     height: 25px;
     width: 170px;
@@ -146,17 +149,17 @@ footer p {
     height: 300px;
     padding: 3vmin 0px;
   }
-  .icon{
-  height: 20px;
-  width: 20px;
-}
-footer {
-  height: 170px;
-}
-.detail{
-  display: grid;
-  grid-template-columns: 15px 1fr;
-}
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  footer {
+    height: 170px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+  }
 }
 @media (min-width: 670px) {
   .about h2 {
@@ -164,7 +167,7 @@ footer {
     width: 180px;
     font-size: 3.2vmax;
   }
-  button {
+  .button_link {
     margin-top: 70px;
     height: 28px;
     width: 200px;
@@ -178,17 +181,17 @@ footer {
     font-size: 8.5vmin;
     height: 21vmin;
   }
-  .icon{
-  height: 25px;
-  width: 25px;
-}
-footer {
-  height: 200px;
-}
-.detail{
-  display: grid;
-  grid-template-columns: 18px 1fr;
-}
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+  footer {
+    height: 200px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+  }
 }
 @media (min-width: 800px) {
   .about h2 {
@@ -196,7 +199,7 @@ footer {
     width: 240px;
     font-size: 3.3vmax;
   }
-  button {
+  .button_link {
     margin-top: 80px;
     height: 30px;
     width: 240px;
@@ -213,14 +216,14 @@ footer {
     height: 380px;
     padding: 3vmin 0px;
   }
-  .icon{
-  height: 30px;
-  width: 30px;
-}
-.detail{
-  display: grid;
-  grid-template-columns: 23px 1fr;
-}
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 23px 1fr;
+  }
 }
 @media (min-width: 1000px) {
   .about h2 {
@@ -228,7 +231,7 @@ footer {
     width: 300px;
     font-size: 3.4vmax;
   }
-  button {
+  .button_link {
     margin-top: 100px;
     height: 45px;
     width: 380px;
@@ -245,15 +248,15 @@ footer {
     height: 400px;
     padding: 3vmin 0px;
   }
-   .icon{
-  height: 35px;
-  width: 35px;
-}
-footer {
-  height: 230px;
-}
-.detail{
-  display: grid;
-  grid-template-columns: 28px 1fr;
-}
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  footer {
+    height: 230px;
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+  }
 }
