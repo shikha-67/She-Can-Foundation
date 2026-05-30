@@ -15,12 +15,18 @@ header {
   z-index: 1000;
 }
 h1 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
   height: 20vmin;
   color: white;
   font-size: 8vmin;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 1.5rem;
+   background: linear-gradient(-150deg, rgb(102, 53, 90), #6169c1);
+  
 }
 main {
   padding-top: 20vmin;
@@ -194,6 +200,9 @@ footer p {
   }
 }
 @media (min-width: 800px) {
+  h1{
+  width:95vmin ;
+  }
   .about h2 {
     height: 55px;
     width: 240px;
@@ -226,6 +235,10 @@ footer p {
   }
 }
 @media (min-width: 1000px) {
+    h1{
+  width:100vmin ;
+  }
+
   .about h2 {
     height: 70px;
     width: 300px;
